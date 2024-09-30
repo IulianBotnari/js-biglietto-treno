@@ -3,6 +3,10 @@ body{
     
 }
 
+label{
+    font-weight: bold;
+}
+
 h1{
     text-align: center;
 }
@@ -11,4 +15,11 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#result{
+    text-align: center;
+
+    font-size: 50px;
 }
