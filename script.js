@@ -1,21 +1,33 @@
 
-let age = (document.getElementById(`age`));
-
-let kilometer = (document.getElementById(`kilometer`).value);
-
-
-let minorDiscount = 100 / 100 * 20;
-
-let overDiscount = 100 / 100 * 20;
-
 function moltiplicazione() {
+    let age = (document.getElementById(`age`).value);
     let kilometer = (document.getElementById(`kilometer`).value);
-    let priceForKm = 4;
+    let priceForKm = 0.21;
+    let minorDiscount = 20;
+    let overDiscount = 40;
+
+
+    if ((age < 65) && (age >= 18)) {
+        let calc = priceForKm * kilometer;
+    
+        document.getElementById(`result`).innerHTML = calc;
+
+    }
     
 
-    let sum = priceForKm * kilometer;
+    if (age >= 65){
+        let calc = ((priceForKm * kilometer) - (priceForKm * kilometer) / 100 * overDiscount);
+    
+        document.getElementById(`result`).innerHTML = calc;
 
-    document.getElementById(`result`).innerHTML = sum;
+    }
+
+    if (age < 18){
+        let calc = ((priceForKm * kilometer) - (priceForKm * kilometer) / 100 * minorDiscount);
+    
+        document.getElementById(`result`).innerHTML = calc;
+
+    }
     
 }
 
