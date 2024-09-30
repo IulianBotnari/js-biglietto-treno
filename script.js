@@ -1,25 +1,22 @@
 
-let age = (document.getElementById(`age`).value);
+let age = (document.getElementById(`age`));
 
 let kilometer = (document.getElementById(`kilometer`).value);
 
-let priceForKm = 0.21;
 
 let minorDiscount = 100 / 100 * 20;
 
 let overDiscount = 100 / 100 * 20;
 
-function sum() {
+function moltiplicazione() {
+    let kilometer = (document.getElementById(`kilometer`).value);
+    let priceForKm = 4;
+    
 
-    kilometer * priceForKm;
+    let sum = priceForKm * kilometer;
 
-    document.getElementById(`result`)
+    document.getElementById(`result`).innerHTML = sum;
     
 }
-
-let x = 1
-let y = 2
-
-console.log(x + y);
 
 
