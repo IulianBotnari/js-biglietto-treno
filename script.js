@@ -10,25 +10,26 @@ function moltiplicazione() {
     if ((age < 65) && (age >= 18)) {
         let calc = priceForKm * kilometer;
     
-        document.getElementById(`result`).innerHTML = calc;
+        document.getElementById(`result`).innerHTML = calc.toFixed(2);
 
-    }
-    
-
-    if (age >= 65){
+    }else if (age >= 65){
         let calc = ((priceForKm * kilometer) - (priceForKm * kilometer) / 100 * overDiscount);
     
-        document.getElementById(`result`).innerHTML = calc;
+        document.getElementById(`result`).innerHTML = calc.toFixed(2);
 
-    }
-
-    if (age < 18){
+    }else if(age < 18){
         let calc = ((priceForKm * kilometer) - (priceForKm * kilometer) / 100 * minorDiscount);
     
-        document.getElementById(`result`).innerHTML = calc;
+        document.getElementById(`result`).innerHTML = calc.toFixed(2);
 
     }
+
     
 }
 
+let .float = 5
 
+let y = 6
+
+
+console.log(x + y);
